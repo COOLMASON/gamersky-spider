@@ -1,4 +1,4 @@
-# -*- coding:utf8 -*-
+# -*- coding:utf-8 -*-
 import os
 import sys
 import re
@@ -12,9 +12,11 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 # 注意命名规则
-class GamerskySpider(object):
+class GamerskySpider(object, url):
     def __init__(self):
+        # initial GamerskySpider object with url
         print u'开始爬取内容....'
+        url = url
 
     def get_source(self, url):
         HEADERS = {'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"}
