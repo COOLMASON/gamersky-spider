@@ -59,8 +59,8 @@ class GamerskySpider(object):
 
 if __name__ == '__main__':
 
-    DIR = u'E:\\Python\\requests\\pic_spider'
-    URL = raw_input('Input the website: ')
+    DIR = raw_input(u'输入保存目录：')
+    URL = raw_input(u'输入网页地址：')
 
     gamersky = GamerskySpider()
 
